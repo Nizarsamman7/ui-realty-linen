@@ -22,3 +22,18 @@ input, select, textarea { font: inherit; border: 1px solid #d5d0c6; padding: 0.7
 button { font: inherit; background: #3f5c4e; color: white; border: 0; padding: 0.8rem; cursor: pointer; }
 .form-success { background: white; padding: 1rem; }
 @media (max-width: 900px) { .listings, .search { grid-template-columns: 1fr; } }
+
+
+.eyebrow { letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.75rem; }
+.lede { max-width: 42rem; font-size: 1.08rem; }
+.sheet { padding: 2.5rem 1.5rem 4rem; max-width: 980px; margin: 0 auto; }
+.sheet h1 { font-family: var(--font-display), Georgia, serif; font-weight: 500; font-size: clamp(2.2rem, 5vw, 4.2rem); line-height: 0.95; margin: 0.35rem 0 0.8rem; }
+.trio { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.stack { display: grid; gap: 0.75rem; margin: 1.25rem 0; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 0.45rem 1rem; padding: 0.7rem 1.4rem 0.9rem; }
+.site-nav a { text-decoration: none; }
+.side .site-nav { display: grid; padding: 1.2rem 0 0; gap: 0.4rem; }
+details.panel summary { cursor: pointer; font-weight: 600; }
+.sheet .row { display: flex; justify-content: space-between; gap: 1rem; padding: 0.75rem 0; }
+
+.panel { background: white; } .site-nav { background: #e8e4dc; }

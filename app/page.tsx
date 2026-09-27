@@ -11,13 +11,9 @@ const areas = ["Jordaan", "De Pijp", "Oost", "Zuid", "Noord"];
 export default function HomePage() {
   return (
     <>
-      <header className="nav">
-        <Link className="logo" href="/">Linen &amp; Key</Link>
-        <nav><Link href="/listings">All listings</Link></nav>
-      </header>
       <section className="search">
         <h1>Homes with the keys still warm.</h1>
-        <div className="fake">Search is a visual only. Filter lives in the content file when you add one.</div>
+        <div className="fake">Three sample homes. Open listings for the full set.</div>
       </section>
       <section className="listings">
         {homes.map(([tone, area, title, price, facts]) => (
@@ -33,7 +29,7 @@ export default function HomePage() {
         ))}
       </section>
       <section className="areas">
-        {areas.map((area) => <span key={area}>{area}</span>)}
+        {areas.map((area) => <Link key={area} href={area === "Jordaan" || area === "Oost" || area === "Zuid" ? "/" + area.toLowerCase() : "/neighbourhoods"}>{area}</Link>)}
       </section>
     </>
   );
